@@ -1,0 +1,40 @@
+# Ghostty 配置
+# 配置 reload：Cmd+Shift+,    显示当前配置：ghostty +show-config
+
+# —— 字体 ——
+# 显式指定字体族，否则 ExtraBold 之类的字重可能不生效
+font-family = JetBrainsMono Nerd Font Mono
+font-size = 16
+# font-style: Bold / SemiBold / ExtraBold / Black 自选
+font-style = ExtraBold
+# font-thicken: macOS retina 上额外加粗渲染
+font-thicken = true
+
+# —— 透明 + 液态玻璃（macOS 26+ Liquid Glass）——
+# macos-glass-clear   : 高度通透的液态玻璃（更透）
+# macos-glass-regular : 标准液态玻璃（稍稠）
+# 数字 / true / false : 老式毛玻璃模糊
+background-opacity = 0.85
+background-blur = macos-glass-clear
+
+# —— 主题（Ghostty 内置上百个，list-themes 浏览）——
+theme = Catppuccin Mocha
+
+# 只覆盖背景色，主题的文字/palette 配色保持不变
+# 1a1b26 = Tokyo Night 的深蓝黑，透明效果最好
+# 想换其他可选：000000 纯黑 / 11111b Mocha 更深 / 0d0d1a 接近黑的紫
+background = 1a1b26
+
+# 覆盖正文文字颜色，避免 Mocha 默认蓝白偏冷
+# e6e6e6 暖白 / fbf1c7 奶黄(gruvbox) / dcdcdc 中性灰白 / ffffff 纯白
+foreground = e8e6dd
+
+# —— macOS 标题栏 ——
+# tabs 模式：标签直接放在标题栏里（紧凑、空间利用好）
+# native：原生 titlebar + tab bar 两行
+macos-titlebar-style = tabs
+
+# —— 其他常用 ——
+cursor-style = bar
+copy-on-select = clipboard
+confirm-close-surface = false
